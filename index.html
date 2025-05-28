@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMSURF Research Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #0f3054;
+    }
+    header {
+      background: #0f3054;
+      color: white;
+      padding: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    header h1 {
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: #f0f0f0;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #0f3054;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      background: #ffa62e;
+    }
+    /* Dropdown menu styles */
+    .dropdown {
+	  padding: 0.75rem 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #0f3054;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffa62e;
+    }
+
+    .section {
+      max-width: 800px;
+      padding: 2rem;
+      background: white;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #0f3054;
+    }
+    .section h2 {
+      color: #0f3054;
+    }
+	.section h3 {
+      color: #ffa62e;
+    }
+    .logos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .logos img {
+      height: 80px;
+      object-fit: contain;
+    }
+    a {
+      color: #0f3054;
+    }
+	
+	.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+    .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    margin-top: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IMSURF - Impact and Mitigation of seismic SURFace waves on large 3D structures</h1>
+  </header>
+
+  <nav>
+    <div class="dropdown">
+      <a href="#about">About IMSURF</a>
+      <div class="dropdown-content">
+        <a href="context.html">Context</a>
+        <a href="originality-relevance.html">Originality and Relevance</a>
+        <a href="impacts-benefits.html">Impacts and Benefits</a>
+        <a href="objectives.html">Objectives</a>
+      </div>
+    </div>
+	<div class="dropdown">
+    <a href="#consortium">Consortium</a>
+	   <div class="dropdown-content">
+        <a href="GDS.html">Géodynamique et Structures</a>
+        <a href="BRGM.html">BRGM</a>
+        <a href="CentralSupelec.html">CentralSupélec</a>
+        <a href="ENSTAParis.html">ENSTA Paris</a>
+        <a href="UC.html">UC Davis</a>		
+      </div>
+	</div>
+	<div class="dropdown">
+    <a href="#program">Program</a>
+	   <div class="dropdown-content">
+        <a href="WP1.html">WP 1</a>
+        <a href="WP2.html">WP 2</a>
+        <a href="WP3.html">WP 3</a>
+        <a href="WP4.html">WP 4</a>
+        <a href="WP5.html">WP 5</a>		
+      </div>
+	</div>
+	<div class="dropdown">
+    <a href="#publications">Publications</a>
+	   <div class="dropdown-content">
+        <a href="deliv.html">Deliverables</a>
+        <a href="Meetings.html">Meetings</a>
+        <a href="Present.html">Presentations</a>
+        <a href="scient.html">Scientific Articles</a>
+        <a href="videos.html">Videos</a>		
+      </div>
+	</div>
+    <a href="#news">News and Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- Logos before section frames -->
+  <div class="logos">
+    <img src="logo-IMSURF6_base.png" alt="IM-SURF Logo" style="width: 250px;">
+    <img src="ANR-logo-C.png" alt="ANR Logo" style="width: 250px;">
+  </div>
+  
+  <section id="about" class="section">
+    <h2>About IMSURF</h2>
+    <p>The IM-SURF project is focused on the impact and mitigation of seismic surface waves on large 3D structures. It aims to improve the resilience of infrastructures exposed to ground motion through innovative design, monitoring, and simulation techniques.</p>
+  </section>
+
+  <section id="consortium" class="section">
+    <h2>Consortium</h2>
+    <p>The project brings together three public institutions (BRGM, CentraleSupélec, ENSTA), a commercial partner (GDS), and an international institution (UC-Davis)</p>
+    <div class="logos">
+      <a href="https://www.geodynamique.com/fr/" target="_blank"><img src="logo-geodynamique.png" alt="Consortium Member 1"></a>
+      <a href="https://www.centralesupelec.fr/" target="_blank"><img src="Logo_CentraleSupelec.png" alt="Consortium Member 2"></a>
+      <a href="https://www.ensta-paris.fr/fr" target="_blank"><img src="Logo_ENSTA.png" alt="Consortium Member 3"></a>
+      <a href="https://www.brgm.fr/en" target="_blank"><img src="logo-brgm-francais.png" alt="Consortium Member 4"></a>
+      <a href="https://www.ucdavis.edu/" target="_blank"><img src="UC-Davis-logo.png" alt="Consortium Member 5"></a>
+    </div>
+  </section>
+
+  <section id="program" class="section">
+    <h2>Program</h2>
+    <p>The proposed project is divided into 5 Work Packages (WP). Each WP contains tasks with detailed actions, milestones and deliverables. </p>
+    <p>	Each WP has a partner as responsible Leader, who coordinates the tasks of the WP.</p>
+	<h3>Working Packages</h3>
+    <ul>
+      <li><a href="#wp1">WP1 - Project Management and Dissemination of results</a></li>
+      <li><a href="#wp2">WP2 - Enrichment of existing strong motion databases for surface wave studies</a></li>
+      <li><a href="#wp3">WP3 - Numerical techniques for obtaining full 3D wave regimes from the geological to the geotechnical scale</a></li>
+      <li><a href="#wp4">WP4 - Development of numerical techniques for seismic SSI calculations with complete wave regime and presence of strong nonlinearities in the near field</a></li>
+      <li><a href="#wp5">WP5 - Seismic performance of structures of large dimensions subjected to the incidence of “3D” motions with surface waves</a></li>
+	  	
+    </ul>
+	<p>The following figure presents the global flowchart of IM-SURF project with the role of each partner of the research consortium.</p>
+	<img src="GlobalFlowChart.png" alt="GlobalFlowChart" class="program-image" style="width:90%;">
+  </section>
+
+  <section id="publications" class="section">
+    <h2>Publications</h2>
+    <p>Read our latest scientific outputs, including peer-reviewed papers and conference presentations.</p>
+    <p>Different strategies are pursued in order to ensure a rapid transfer of the results, in particular to public authorities and to the scientific and engineering communities. Specifically:</p>
+    <ul>
+      <li>Publications of project's reports</li>
+      <li>Progress meetings during the project</li>
+      <li>Presentations and sessions in national and international conferences</li>
+      <li>Publications in scientific international journals</li>
+    </ul>
+	<h3>Project Video: Preliminary Modeling of P-wave Propagation in Homogeneous soil.</h3>
+	<div class="video-container">
+	<video width="600" controls>
+		<source src="disp_80m.ogv" type="video/ogg">
+	</video>
+
+	</div>
+	<p>Stage GDS: ISS modeling for large civil engineering structures.</p>
+	<p>By: Tanguy Ramanantsoavina</p>
+  </section>
+
+  <section id="news" class="section">
+    <h2>News and Events</h2>
+    <p>Stay updated with the latest IMSURF project news and upcoming scientific events or workshops.</p>
+	  
+	<h3>Kick-off Meeting for projects ANR 2024 </h3>
+	<p>The project IMSURF was presented during the kick-off metting of ANR projects approved in 2024 by the ANR Evaluation Comitee CE22 "Ville, bâtiments et construction, transport et mobilité : transition vers la durabilité".</p>
+	<p>During the meeting, IMSURF was presented as one of the 20 projects selected for funding, out of 74 proposals.</p>
+	<div class="image-container">
+	<img src="statistics.png" alt="statistics" class="statistics.png-image" style="width:40%;">
+	</div>
+	
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>For more information about the IMSURF project, please contact us at:</p>
+    <p>Email: <a href="mailto:charisis.chatzigogos@geodynamique.com">charisis.chatzigogos@geodynamique.com</a></p>
+    <p>Project Coordinator: Dr. Charisis Chatzigogos</p>
+    <p>Company: Géodynamique et Structures</p>
+  </section>
+</body>
+</html>
