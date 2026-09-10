@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESC}}" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="{{TITLE}}" />
+  <meta property="og:description" content="{{DESC}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://im-surf.github.io/Imsurfweb/{{URLPATH}}" />
+  <meta property="og:image" content="https://im-surf.github.io/Imsurfweb/assets/img/logo-imsurf.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-imsurf.png" alt="IM-SURF" class="brand-logo" width="879" height="160" />
+        <span class="brand-text">IM-SURF</span>
+      </a>
+      <h1>Impact and Mitigation of seismic SURFace waves on large 3D structures</h1>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="site-nav">
+{{NAV}}
+    </nav>
+  </header>
+
+  <main id="main">
+{{CONTENT}}
+  </main>
+
+  <footer class="site-footer">
+    <p>IM-SURF is funded by the French National Research Agency (ANR).</p>
+    <p><a href="index.html#contact">Contact</a> &middot; <a href="news.html">News &amp; Updates</a> &middot; <a href="https://github.com/im-surf/Imsurfweb" target="_blank" rel="noopener">Project on GitHub</a></p>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>
