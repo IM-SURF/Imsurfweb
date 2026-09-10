@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Originality and Relevance | IM-SURF</title>
+  <meta name="description" content="What's new about IM-SURF's approach, from completing the MODULATE database to producing practical 1D-to-3D design guidelines." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Originality and Relevance | IM-SURF" />
+  <meta property="og:description" content="What's new about IM-SURF's approach, from completing the MODULATE database to producing practical 1D-to-3D design guidelines." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://im-surf.github.io/Imsurfweb/originality-relevance.html" />
+  <meta property="og:image" content="https://im-surf.github.io/Imsurfweb/assets/img/logo-imsurf.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-imsurf.png" alt="IM-SURF" class="brand-logo" width="879" height="160" />
+        <span class="brand-text">IM-SURF</span>
+      </a>
+      <h1>Impact and Mitigation of seismic SURFace waves on large 3D structures</h1>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="site-nav">
+      <ul class="nav-list">
+        <li class="dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">About IMSURF</button>
+          <ul class="dropdown-content">
+            <li><a href="context.html">Context</a></li>
+            <li><a href="originality-relevance.html">Originality and Relevance</a></li>
+            <li><a href="impacts-benefits.html">Impacts and Benefits</a></li>
+            <li><a href="objectives.html">Objectives</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">Consortium</button>
+          <ul class="dropdown-content">
+            <li><a href="GDS.html">G&eacute;odynamique et Structures</a></li>
+            <li><a href="BRGM.html">BRGM</a></li>
+            <li><a href="CentralSupelec.html">CentraleSup&eacute;lec</a></li>
+            <li><a href="ENSTAParis.html">ENSTA Paris</a></li>
+            <li><a href="UC.html">UC Davis</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">Program</button>
+          <ul class="dropdown-content">
+            <li><a href="WP1.html">WP 1</a></li>
+            <li><a href="WP2.html">WP 2</a></li>
+            <li><a href="WP3.html">WP 3</a></li>
+            <li><a href="WP4.html">WP 4</a></li>
+            <li><a href="WP5.html">WP 5</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">Publications</button>
+          <ul class="dropdown-content">
+            <li><a href="deliv.html">Deliverables</a></li>
+            <li><a href="Meetings.html">Meetings</a></li>
+            <li><a href="Present.html">Presentations</a></li>
+            <li><a href="scient.html">Scientific Articles</a></li>
+            <li><a href="videos.html">Videos</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html">News &amp; Updates</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="main">
+<section class="section">
+    <h2>Originality and Relevance</h2>
+    <p>IM-SURF's originality lies in systematically bridging four scales &mdash; wave-regime characterisation, geological, geotechnical and structural &mdash; to move engineering practice from the simplified &ldquo;3&times;1D&rdquo; approximation toward full &ldquo;3D&rdquo; dynamic soil-structure interaction analysis, and in turning the results into concrete guidelines that define when the conventional 1D approach remains valid.</p>
+
+    <h3>What sets IM-SURF apart</h3>
+    <ul>
+      <li><strong>Extending beyond long-period structures</strong> to massive structures of large dimensions with realistic foundation geometry &mdash; particularly large industrial and nuclear buildings, which can experience significant rotational motion from Rayleigh-wave incidence that 1D site-response analysis cannot capture.</li>
+      <li><strong>Completing the high-frequency content of the MODULATE database</strong>, most of whose signals were recorded with time steps too large to preserve high-frequency detail, using stochastic and AI methods together with additional signals from recent earthquakes (2023 Turkey, 2024 Noto).</li>
+      <li><strong>A novel hybrid ground-motion generation approach</strong>: rather than the usual practice of using only the low-frequency deterministic part of a signal to predict its high-frequency stochastic part, IM-SURF uses the middle-frequency (body-wave) range to predict <em>both</em> the low-frequency (surface-wave) and high-frequency parts &mdash; a technique rarely applied in the presence of surface waves.</li>
+      <li><strong>Advanced coupled numerical techniques</strong> across scales &mdash; the Spectral Element Method, H-matrix accelerated Boundary Element Method, Fourier Continuation-based solvers, and weak coupling schemes (SEM-FEM, SEM-SEM-FEM, BEM-FEM) &mdash; to preserve the full 3D wave regime, surface waves included, from the geological scale down to the structure.</li>
+      <li><strong>Nonlinear near-field and foundation effects integrated into the Domain Reduction Method</strong>, a technique already efficient and widely available in structural-analysis software but not yet thoroughly extended to surface-wave generation and near-foundation nonlinearity.</li>
+      <li><strong>Mitigation strategies aimed specifically at surface waves and rotational motion</strong>, including foundation retreat/treatment and periodic wave barriers that exploit elastic-wave &ldquo;bandgaps,&rdquo; as an alternative to structural upgrading when that isn't feasible or cost-effective.</li>
+      <li><strong>A direct, practice-ready deliverable</strong>: a concise set of rules and guidelines defining the validity range of conventional 1D site-response methods, and identifying which cases &mdash; by source characteristics, geological setup, geotechnical conditions and structural configuration &mdash; call for a rigorous 2D/3D approach instead.</li>
+    </ul>
+
+    <p>See also: <a href="context.html">Context</a> &middot; <a href="objectives.html">Objectives</a> &middot; <a href="impacts-benefits.html">Impacts and Benefits</a></p>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>IM-SURF is funded by the French National Research Agency (ANR).</p>
+    <p><a href="index.html#contact">Contact</a> &middot; <a href="news.html">News &amp; Updates</a> &middot; <a href="https://github.com/im-surf/Imsurfweb" target="_blank" rel="noopener">Project on GitHub</a></p>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>
